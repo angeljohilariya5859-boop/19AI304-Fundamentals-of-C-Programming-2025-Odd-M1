@@ -26,7 +26,22 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    printf("Integer: %d\n", 25);
+    printf("Float: %.2f\n", 12.50);
+    printf("Character: %c\n", 'A');
+    printf("String: %s\n", "Hello World");
+
+    return 0;
+}
 # Output:
+Integer: 25
+Float: 12.50
+Character: A
+String: Hello World
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +72,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+#define PI 3.14
+
+int main()
+{
+    const int num = 100;
+
+    printf("Macro constant PI = %.2f\n", PI);
+    printf("Constant variable num = %d\n", num);
+
+    return 0;
+}
 # Output:
+Macro constant PI = 3.14
+Constant variable num = 100
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +111,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    float b = 12.5f;
+    double c = 25.6789;
+    char d = 'A';
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %.2f\n", b);
+    printf("Double value: %.4lf\n", c);
+    printf("Character value: %c\n", d);
+
+    return 0;
+}
 # Output:
+Integer value: 10
+Float value: 12.50
+Double value: 25.6789
+Character value: A
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +170,49 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Addition = %d\n", a + b);
+    printf("Subtraction = %d\n", a - b);
+    printf("Multiplication = %d\n", a * b);
+    printf("Division = %d\n", a / b);
+    printf("Remainder = %d\n", a % b);
+
+    printf("\nBitwise Operations:\n");
+    printf("AND = %d\n", a & b);
+    printf("OR = %d\n", a | b);
+    printf("XOR = %d\n", a ^ b);
+    printf("Left Shift = %d\n", a << 1);
+    printf("Right Shift = %d\n", a >> 1);
+    printf("NOT of first number = %d\n", ~a);
+
+    return 0;
+}
 # Output:
+Enter two integers: 10 3
+
+Arithmetic Operations:
+Addition = 13
+Subtraction = 7
+Multiplication = 30
+Division = 3
+Remainder = 1
+
+Bitwise Operations:
+AND = 2
+OR = 11
+XOR = 9
+Left Shift = 20
+Right Shift = 5
+NOT of first number = -11
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +257,30 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    printf("%c is %s\n", ch,
+           (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+           ? "Vowel"
+           : ((ch >= '0' && ch <= '9')
+              ? "Digit"
+              : (((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+                 ? "Consonant"
+                 : "Special Symbol")));
+
+    return 0;
+}
 # Output:
+<img width="1193" height="335" alt="image" src="https://github.com/user-attachments/assets/11d17e33-f0ea-4ce2-9fbf-edc191aed7b2" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
